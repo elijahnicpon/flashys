@@ -37,4 +37,8 @@ public class ArtistServiceImplementation implements ArtistService {
     public void deleteArtist(String artistId) {
         artistRepository.deleteById(artistId);
     }
+
+    public void deleteAllArtist() {
+        artistRepository.deleteAll();
+    }
 }
