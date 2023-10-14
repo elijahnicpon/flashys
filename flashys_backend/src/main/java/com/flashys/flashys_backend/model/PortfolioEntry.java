@@ -14,6 +14,7 @@ import java.util.Date;
 @Setter
 public class PortfolioEntry {
     @Id
+    private String portfolioEntryId;
     private String artistId;
     private String img; //base64Str
     private Date date;
