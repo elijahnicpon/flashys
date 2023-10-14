@@ -13,9 +13,9 @@ import java.util.Date;
 @Getter
 @Setter
 public class Message {
-    @Id
+    @id
+    private String messageId;
     private String userId;
-    @Id
     private String artistId;
     private Date timestamp;
 }
