@@ -2,10 +2,10 @@ import React from 'react'
 
 import './Footer.css'
 
-import appointments from './go_appointments.svg'
-import settings from './go_user_settings.svg'
-import messages from './go_messages.svg'
-import home from './go_home.svg'
+import appointments from './imgs/go_appointments.svg'
+import settings from './imgs/go_user_settings.svg'
+import messages from './imgs/go_messages.svg'
+import home from './imgs/go_home.svg'
 
 const Footer = () => {
   return (
