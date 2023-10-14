@@ -22,4 +22,9 @@ public class ArtistController {
     public List<Artist> findAllArtists() {
         return artistRepository.findAll();
     }
+
+    /**
+     * returns all artists AND 4 of their portfolio entries
+     */
+//    @GetMapping("/artists/allWithPreview")
 }
