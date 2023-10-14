@@ -3,10 +3,7 @@ package com.flashys.flashys_backend.controller;
 import com.flashys.flashys_backend.model.Flash;
 import com.flashys.flashys_backend.repository.FlashRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -22,7 +19,10 @@ public class FlashController {
         return flashRepository.findAll();
     }
 
-    // TODO: get by artist id (see: PortfolioEntry.java/findPortfolioEntriesByArtistId)
+    @GetMapping("/flash/byArtistId/{artistId}")
+    public List<Flash> findFlashesByArtistId(@PathVariable String artistId) {
+        return flashRepository.getFlashesByArtistId(artistId);
+    }
 
 //    @GetMapping("/flash/allUnreserved")
 //    public List<Flash> findAllUnreservedFlashes() {
