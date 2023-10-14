@@ -9,4 +9,6 @@ public interface ArtistService {
     Artist getArtistById(String artistId);
     List<Artist> getAllArtists();
     void deleteArtist(String artistId);
+
+
 }
