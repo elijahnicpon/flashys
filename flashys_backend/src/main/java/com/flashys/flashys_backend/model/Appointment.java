@@ -16,11 +16,8 @@ public class Appointment {
 
     @Id
     private String appointmentId;
-    @Id
     private String flashId; // If null --> commission
-    @Id
     private String artistId;
-    @Id
     private String userId;
     private Date startTime;
     private Date endTime;
