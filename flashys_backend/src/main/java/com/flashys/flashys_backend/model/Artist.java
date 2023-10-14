@@ -28,4 +28,16 @@ public class Artist {
     // Constructors, additional methods, and any other annotations can be added here.
 
     // You can generate getters and setters using Lombok's @Getter and @Setter annotations if needed.
+
+
+    public Artist(String displayName, String pronouns, GeoJsonPoint location, String bio, String link, String profilePic, String email, String password) {
+        this.displayName = displayName;
+        this.pronouns = pronouns;
+        this.location = location;
+        this.bio = bio;
+        this.link = link;
+        this.profilePic = profilePic;
+        this.email = email;
+        this.password = password;
+    }
 }
