@@ -19,12 +19,12 @@ public class ArtistServiceImplementation implements ArtistService {
     }
 
     @Override
-    public Optional<Artist> createArtist(Artist artist) {
+    public Artist createArtist(Artist artist) {
         return artistRepository.save(artist);
     }
 
     @Override
-    public Optional<Artist> getArtistById(String artistId) {
+    public Artist getArtistById(String artistId) {
         return artistRepository.findById(artistId).orElse(null);
     }
 
