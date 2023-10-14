@@ -4,7 +4,7 @@ import lombok.Data;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
-@Document()
+@Document(collection = "flash")
 public class Flash {
 
 }
