@@ -1,12 +1,16 @@
 package com.flashys.flashys_backend.model;
 
-import lombok.Data;
+import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.geo.GeoJsonPoint;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
 @Document(collection = "artist")
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
 public class Artist {
 
     @Id
