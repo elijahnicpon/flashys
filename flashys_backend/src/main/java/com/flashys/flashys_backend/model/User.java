@@ -16,7 +16,6 @@ import java.util.Base64;
 public class User {
     @Id
     private String userId;
-
     private String displayName;
     private GeoJsonPoint location;
     private String bio;
