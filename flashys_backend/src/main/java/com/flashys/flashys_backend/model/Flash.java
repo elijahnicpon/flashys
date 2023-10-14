@@ -13,10 +13,11 @@ import java.util.Date;
 @Getter
 @Setter
 public class Flash {
+   @Id
+    private String flashId;
     private String img; //base64str
     private Date date;
     private String description;
-    @Id
     private String artistId;
     private String paymentPolicy;
     private boolean isReserved;
