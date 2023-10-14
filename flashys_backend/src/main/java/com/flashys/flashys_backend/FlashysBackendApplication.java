@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class FlashysBackendApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(FlashysBackendApplication.class, args);
+        Class<?>[] runner = new Class<?>[]{FlashysBackendApplication.class, SeedRunner.class};
+        SpringApplication.run(runner, args);
+        System.out.println("\n-----✅ Application Setup Complete!-----");
     }
 
 }
