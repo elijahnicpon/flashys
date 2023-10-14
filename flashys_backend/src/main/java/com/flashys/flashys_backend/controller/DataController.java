@@ -17,7 +17,7 @@ public class DataController {
     private ArtistServiceImplementation artistService;
 
     @GetMapping("artists/{artist_id}")
-    public Optional<Artist> getArtistsById(@PathVariable String artist_id) {
+    public Artist getArtistsById(@PathVariable String artist_id) {
         return artistService.getArtistById(artist_id);
     }
 }
