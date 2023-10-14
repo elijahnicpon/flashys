@@ -13,7 +13,7 @@ import java.util.Date;
 @Getter
 @Setter
 public class Message {
-    @id
+    @Id
     private String messageId;
     private String userId;
     private String artistId;
