@@ -20,6 +20,10 @@ public class PortfolioEntry {
     private Date date;
     private String description;
 
-
-    
+    public PortfolioEntry(String artistId, String img, Date date, String description) {
+        this.artistId = artistId;
+        this.img = img;
+        this.date = date;
+        this.description = description;
+    }
 }
