@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="652ba9fb-dfd5-4302-9625-8104f17a4a5a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/flashys_backend/src/main/java/com/flashys/flashys_backend/model/Appointment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flashys_backend/src/main/java/com/flashys/flashys_backend/model/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flashys_backend/src/main/java/com/flashys/flashys_backend/model/PortfolioEntry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flashys_backend/src/main/java/com/flashys/flashys_backend/model/User.java" afterDir="false" />
+    <list default="true" id="652ba9fb-dfd5-4302-9625-8104f17a4a5a" name="Changes" comment="Yay">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flashys_backend/src/main/java/com/flashys/flashys_backend/model/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/flashys_backend/src/main/java/com/flashys/flashys_backend/model/Artist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flashys_backend/src/main/java/com/flashys/flashys_backend/model/Flash.java" beforeDir="false" afterPath="$PROJECT_DIR$/flashys_backend/src/main/java/com/flashys/flashys_backend/model/Flash.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +51,14 @@
       <option name="presentableId" value="Default" />
       <updated>1697260168821</updated>
     </task>
+    <task id="LOCAL-00001" summary="Yay">
+      <created>1697294974835</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697294974835</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -106,5 +108,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Yay" />
+    <option name="LAST_COMMIT_MESSAGE" value="Yay" />
   </component>
 </project>
