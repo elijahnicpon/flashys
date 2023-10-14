@@ -20,5 +20,4 @@ public class DataController {
     public Artist getArtistsById(@PathVariable String artist_id) {
         return artistService.getArtistById(artist_id);
     }
-
 }
