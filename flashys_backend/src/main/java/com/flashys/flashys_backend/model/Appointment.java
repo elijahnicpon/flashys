@@ -14,6 +14,8 @@ public class Appointment {
     private String flashId;
     @Id
     private String artistId;
+    @Id
+    private String userId;
     
     
 
