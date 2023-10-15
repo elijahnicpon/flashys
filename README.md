@@ -19,6 +19,9 @@ This was also 75% of the members' first hackathon, and we all thought we were me
 ## What's next for Flashys
 Continuing development and looking towards migrating to a new multi-modal database to take advantage of graph connections for increased speed and connectivity. Migrating to React Native or Flutter for a more streamlined mobile and web experience as well.
 
+## Figma
+<img width="864" alt="image" src="https://github.com/elijahnicpon/flashys/assets/43706587/f3c5c257-a73e-49c3-9d9c-7e1f689f73d4">
+
 ## Whiteboarding!
 ### User Story
 <img width="580" alt="image" src="https://github.com/elijahnicpon/flashys/assets/128508179/eea76c41-fcfb-4e73-bbc4-0aff515baf0c">
