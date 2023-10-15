@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -34,5 +35,23 @@ public class FlashTattoo : MonoBehaviour
         {
             this.currentTattoo.transform.localScale *= 1.0f - scaleFactor;
         }
+    }
+
+    public void SwitchFlashy(Int32 index)
+    {        
+        currentTattoo = GameObject.FindWithTag("Flashy");
+        if (this.currentTattoo == null)
+        {
+            return;
+        }
+        Debug.Log("Flashies/flash" + (index + 1).ToString());
+        Sprite newFlash = Resources.Load<Sprite>("Flashies/flash" + (index + 1).ToString());
+        if (newFlash == null)
+        {
+            Debug.LogError("Selected flash is null!");
+            return;
+        }
+        SpriteRenderer spriteRenderer = currentTattoo.GetComponentInChildren<SpriteRenderer>();
+        spriteRenderer.sprite = newFlash;
     }
 }
