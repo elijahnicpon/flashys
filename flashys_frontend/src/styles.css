@@ -49,10 +49,6 @@ body {
     background-color: #eee
 }
 
-.nav li {
-    align-self: center;
-}
-
 .nav li.active {
     background-color: rgb(133, 133, 133)
 }

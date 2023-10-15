@@ -1,5 +1,6 @@
 package com.flashys.flashys_backend;
 
+import com.flashys.flashys_backend.etc.ImageToBase64Converter;
 import com.flashys.flashys_backend.model.Artist;
 import com.flashys.flashys_backend.model.Flash;
 import com.flashys.flashys_backend.model.PortfolioEntry;
@@ -11,6 +12,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.mongodb.core.geo.GeoJsonPoint;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -28,8 +30,22 @@ public class SeedRunner implements CommandLineRunner {
     private PortfolioEntryRepository portfolioEntryRepository;
     @Override
     public void run(String... args) throws Exception {
-        // TODO: replace below array with actual b64 images!
-        String[] base64images_flash = {"image1placeholder_flash", "image2placeholder_flash","image3placeholder_flash","image4placeholder_flash"};
+
+        String folderPath = "src/main/resources/imgs/flash";
+        ArrayList<String> base64images_flash = new ArrayList<>();
+
+        try {
+            List<String> base64Images = ImageToBase64Converter.convertImagesToBase64(folderPath);
+            // Now, base64Images contains the base64-encoded PNG images
+            for (String base64Image : base64Images) {
+                base64images_flash.add(base64Image);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+
         String[] base64images_portfolio = {"image1placeholder_portfolio", "image2placeholder_portfolio","image3placeholder_portfolio","image4placeholder_portfolio"};
 
         System.out.print("Dropping current contents... \t");
@@ -53,7 +69,7 @@ public class SeedRunner implements CommandLineRunner {
             flashes.add(new Flash(
                     artists.get(i % 2).getArtistId(), // artistId
                     "Tattoo Title " + i, // title
-                    base64images_flash[i], // img
+                    base64images_flash.get(i), // img
                     new Date(), // date
                     "Lorem Ipsum", // descript
                     "This is a payment policy!", // payment
