@@ -24,7 +24,6 @@ function Flashes() {
           {flashes.map((flash) => (
             <div key={flash.id} onClick={() => openModal(flash)}>
               <img className="imgs" src={`data:image/png;base64,${flash.img}`} alt={flash.title} />
-              <h2>{flash.title}</h2>
               <CustomLink to="/flashpopups">details</CustomLink>
             </div>
           ))}

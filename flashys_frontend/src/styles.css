@@ -33,6 +33,7 @@ body {
 }
 
 .nav a {
+    font-size: 2rem;
     color: inherit;
     text-decoration: none;
     height: 100%;
