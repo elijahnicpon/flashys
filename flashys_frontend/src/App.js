@@ -20,6 +20,7 @@ const App = () => {
           <Route path="/flashes" element={<Flashes />} />
           <Route path="/artists" element={<Artists />} />
           <Route path="/flashpopups" element={<Flash_Popup />} />
+          <Route path="/artist/:artistId" component={ArtistPage} />
         </Routes>
       </div>
     </div>
