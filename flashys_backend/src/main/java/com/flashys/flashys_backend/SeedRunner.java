@@ -55,8 +55,12 @@ public class SeedRunner implements CommandLineRunner {
 
         System.out.print("Seeder adding Artists... \t");
 
-        Artist a1 = new Artist("John Doe", "he/him", new GeoJsonPoint(0, 0), "Artist bio 1", "http://example.com/1", "base64pfp1", "artist1@example.com", "password1");
-        Artist a2 = new Artist("TutuTattoo", "she/her", new GeoJsonPoint(0,0), "Lorem Ipsum BIooooo", "http://example.com/2", "base64pfp2", "artist2@eaxmple.com", "password2");
+        Artist a1 = new Artist("Christopher Hem", "he/him", new GeoJsonPoint(-122.419416, 37.774929), "Tattoo artist with a passion for wildlife. I have a flash for almost any animal", "http://tatooInk.com/flashes/Christopher-Hem", "pfp1.png", "HemChristopher1997@gmail.com", "2282d2nB3#$@");
+        Artist a2 = new Artist("Emily Johnson", "she/her", new GeoJsonPoint(-73.985130, 40.748817), "Experienced tattoo artist with a love for abstract designs. I am very creative and have been in the business for 20 years.", "http://freshInk.com/myArt-JohnsonEm-2", "pfp2.png", "EmilyJ12e@gmail.com", "Stevie505@!");
+        Artist a3 = new Artist("Sarah Chase", "she/her", new GeoJsonPoint(-87.629799, 41.878113), "Creating unique and vibrant tattoos for over a decade. If you like flashes, then contact me!", "http://tatooX.com/Sarah-Chase_Portfolio", "pfp5.png", "Sarah1@ChaseS.com", "20014LDWW87");
+        Artist a4 = new Artist("Michael Reeves", "he/him", new GeoJsonPoint(-80.191790, 25.761680), "I specialize in watercolor-style tattoos, but I can make any request. If you like my flashes then contact me or book and appointment,", "http://tatooX.com/Micharl-Reeves-Portfolio", "pfp3.png", "Mreeves455@gmail.com", "passwo32rdF#@");
+        Artist a5 = new Artist("Dwayne James", "he/him", new GeoJsonPoint(-118.243683, 34.052235), "I am a new artist, but I have been doing art every since I was a kid. I love what I do, and hopefully you love my flashes!", "http://tatFlash.com/myart/DwayneTheMan/2", "pfp4.png", "JamesD53@gmail.com", "!@D!&Bd21dd");
+
         artistRepository.saveAll(List.of(a1, a2));
         List<Artist> artists = artistRepository.findAll();
         System.out.print("\nArtists now contains:" + artists);
