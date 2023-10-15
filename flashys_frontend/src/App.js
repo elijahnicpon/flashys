@@ -19,6 +19,7 @@ const App = () => {
           <Route path="/" element={<Flashes />} />
           <Route path="/flashes" element={<Flashes />} />
           <Route path="/artists" element={<Artists />} />
+          {/* <Route path="/artist/:artistId" component={ArtistPage} /> */}
         </Routes>
       </div>
       <Footer />
