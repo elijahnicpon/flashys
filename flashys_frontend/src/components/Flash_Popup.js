@@ -1,6 +1,4 @@
 import React from 'react'
-import Flashes from '../pages/Flashes.js';
-
 
 const Flash_Popup = () => {
   return (

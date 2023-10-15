@@ -1,3 +1,16 @@
+.flash-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.imgs {
+  width: 200px;
+  height: 200px;
+  border: 1px solid;
+}
+
 .modal-overlay {
     position: fixed;
     top: 0;

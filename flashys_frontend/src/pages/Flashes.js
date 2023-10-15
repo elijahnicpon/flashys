@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link, useMatch, useResolvedPath } from 'react-router-dom'
 import './Flashes.css'; // Import the CSS file
 
 function Flashes() {
@@ -22,8 +23,9 @@ function Flashes() {
         <div className="flash-grid">
           {flashes.map((flash) => (
             <div key={flash.id} onClick={() => openModal(flash)}>
-              <img src={`data:image/png;base64,${flash.img}`} alt={flash.title} />
+              <img className="imgs" src={`data:image/png;base64,${flash.img}`} alt={flash.title} />
               <h2>{flash.title}</h2>
+              <CustomLink to="/flashpopups">details</CustomLink>
             </div>
           ))}
         </div>
@@ -41,6 +43,19 @@ function Flashes() {
       </div>
     );
   }
+
+  function CustomLink({ to, children, ...props}) {
+    const resolvedPath = useResolvedPath(to)
+    //take out end: true if we want stuff like /flashes/flashes_popup potentially?
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+    return (
+        <li className={resolvedPath === to ? "active" : ""}>
+            <Link to={to} {...props}>
+                {children}
+            </Link>
+        </li>
+    )
+}
   
   export default Flashes;
 
