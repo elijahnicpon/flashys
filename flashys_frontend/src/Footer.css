@@ -1,0 +1,17 @@
+.footer {
+    position: sticky;
+    height: 50px;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: white;
+    box-shadow: 0 -2px 9px rgba(47, 47, 47, 0.5);
+  }
+
+
+.imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+}
