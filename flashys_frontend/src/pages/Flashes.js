@@ -19,7 +19,7 @@ function Flashes() {
   
     return (
       <div>
-        <h1>Flashes</h1>
+        <h1 className="logo">Flashys</h1>
         <div className="flash-grid">
           {flashes.map((flash) => (
             <div key={flash.flashId} onClick={() => openModal(flash)}>
