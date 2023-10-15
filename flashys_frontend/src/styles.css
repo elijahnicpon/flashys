@@ -17,7 +17,7 @@ body {
     padding: 0 1rem;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .nav ul {
@@ -39,7 +39,6 @@ body {
     display: flex;
     align-items: center;
     padding: .25rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .customlinkcontainer {
@@ -48,7 +47,7 @@ body {
 }
 
 .nav li.active {
-    background-color: rgb(133, 133, 133)
+    background-color: rgb(133, 133, 133);
 }
 
 
