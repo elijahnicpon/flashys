@@ -12,26 +12,26 @@ body {
 }
 
 .nav {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
+    width: 100%;
     gap: 2rem;
     padding: 0 1rem;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* CSS just to show the bounds */
+    border: 2px solid;
+    background-color: #eee
 }
 
 .nav ul {
-    padding: 0;
-    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     list-style: none;
     display: flex;
-    gap: 1rem;
-}
-
-.site-title {
-    font-size: 1.5rem;
+    align-items: center;
+    gap: 2rem;
 }
 
 .nav a {
@@ -43,11 +43,21 @@ body {
     padding: .25rem;
 }
 
+.customlinkcontainer {
+    align-items: center;
+    border: 2px solid;
+    background-color: #eee
+}
+
+.nav li {
+    align-self: center;
+}
+
 .nav li.active {
     background-color: rgb(133, 133, 133)
 }
 
+
 .nav li:hover {
     background-color: #777;
 }
-
