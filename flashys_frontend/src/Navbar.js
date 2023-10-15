@@ -1,21 +1,27 @@
+import { Link, useMatch, useResolvedPath } from 'react-router-dom'
+
 export default function Navbar() {
     const path = window.location.pathname
     return (
         <div className="customlinkcontainer">
             <nav className="nav">
                 <ul>
-                    <CustomLink href="/flashes">Flashes</CustomLink>
-                    <CustomLink href="/artists">Artists</CustomLink>   
+                    <CustomLink to="/flashes">Flashes</CustomLink>
+                    <CustomLink to="/artists">Artists</CustomLink>   
                 </ul>
             </nav>
         </div>
 )}
 
-function CustomLink({ href, children, ...props}) {
-    const path = window.location.pathname
+function CustomLink({ to, children, ...props}) {
+    const resolvedPath = useResolvedPath(to)
+    //take out end: true if we want stuff like /flashes/flashes_popup potentially?
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true })
     return (
-        <li className={path === href ? "active" : ""}>
-            <a href={href} {...props}>{children}</a>
+        <li className={resolvedPath === to ? "active" : ""}>
+            <Link to={to} {...props}>
+                {children}
+            </Link>
         </li>
     )
 }
