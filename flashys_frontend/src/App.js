@@ -1,12 +1,12 @@
 import React from 'react'
-import Footer from './Footer'
 import Navbar from './Navbar'
 import Flashes from './pages/Flashes'
 import Artists from './pages/Artists'
 import { Route, Routes } from 'react-router-dom'
-
+import Flash_Popup from './components/Flash_Popup'
 
 import './App.css';
+
 
 
 const App = () => {
@@ -19,10 +19,10 @@ const App = () => {
           <Route path="/" element={<Flashes />} />
           <Route path="/flashes" element={<Flashes />} />
           <Route path="/artists" element={<Artists />} />
-          {/* <Route path="/artist/:artistId" component={ArtistPage} /> */}
+          <Route path="/flashpopups" element={<Flash_Popup />} />
+          <Route path="/artist/:artistId" component={ArtistPage} />
         </Routes>
       </div>
-      <Footer />
     </div>
   );
 }

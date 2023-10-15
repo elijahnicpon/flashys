@@ -19,8 +19,6 @@ body {
     color: rgb(0, 0, 0);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     /* CSS just to show the bounds */
-    border: 2px solid;
-    background-color: #eee
 }
 
 .nav ul {
@@ -35,6 +33,7 @@ body {
 }
 
 .nav a {
+    font-size: 2rem;
     color: inherit;
     text-decoration: none;
     height: 100%;
@@ -45,7 +44,6 @@ body {
 
 .customlinkcontainer {
     align-items: center;
-    border: 2px solid;
     background-color: #eee
 }
 
