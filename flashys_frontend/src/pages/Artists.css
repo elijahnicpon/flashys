@@ -1,0 +1,56 @@
+.artist-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .artist-card {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+  }
+  
+  .profile-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .profile-pic {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .info-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .display-name {
+    font-weight: bold;
+  }
+  
+  .pronouns {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .portfolio-images {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .portfolio-images img {
+    max-width: 80px;
+    max-height: 80px;
+    object-fit: cover;
+    margin: 5px;
+  }
