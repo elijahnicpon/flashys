@@ -1,4 +1,7 @@
 # flashys
+## [Hack GT X Demo Video Link](https://youtu.be/BTRQ4LrcpG8)
+## [Hack GT X DevPost Submission](https://devpost.com/software/flashys)
+
 ## Inspiration
 Elijah recently tried to schedule a tattoo appointment and ran into lots of difficulties. Originally, they wanted to reserve a 'Flash' tattoo, a first-come-first-serve design posted by a local artist. After searching the artist's profile for a reservation link buried deep in a linktree, the artist responded a week later that it had already been claimed. Heartbroken, Elijah reached out to the artist about commissioning a custom tattoo, and after 2 weeks of slow back-and-forth calendar sharing, and payment issues, finally set an appointment. 
 
